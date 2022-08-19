@@ -11,10 +11,12 @@
     <meta charset="utf-8">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/style.css" id="main-styles-link">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/style.css" id="main-styles-link">
   </head>
   <body>
     <div class="page">
@@ -59,6 +61,13 @@
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('coronavirus') }}">Coronavirus</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Government</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Single Government</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('general-information') }}">Import</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="">Government</a></li>
@@ -179,7 +188,9 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="assets/js/core.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/assets/js/core.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
   </body>
 </html>
