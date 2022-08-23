@@ -73,3 +73,43 @@ Route::group(['prefix' => 'import'], function () {
         return view('imports.living-animal-travel');
     })->name('living-animal-travel');
 });
+
+Route::group(['prefix'=> 'exports/issuance-of-exports-permits'], function(){
+
+    Route::get('/general-information', function () {
+        return view('issuance of export permits.generalInformation');
+    })->name('export-generalInformation1');
+
+    Route::get('/third-countries', function () {
+        return view('issuance of export permits.thirdcountries');
+    })->name('export-thirdcountries');
+
+    Route::get('/application-for-export-permits', function () {
+        return view('issuance of export permits.applicationforexport');
+    })->name('application-for-export-permits');
+
+
+    Route::get('/further-information', function () {
+        return view('issuance of export permits.furtherInformation');
+    })->name('further-information');
+
+});
+
+
+Route::group(['prefix'=> 'exports/issuance-of-official-certificates'], function(){
+
+    Route::get('/general-information', function () {
+        return view('issuance of official certificates.generalInformation');
+    })->name('export-generalInformation2');
+
+    Route::get('/application', function () {
+        return view('issuance of official certificates.application');
+    })->name('application');
+
+});
+
+Route::get('/exports/faq', function () {
+    return view('exportfaq');
+})->name('export-faq');
+
+
